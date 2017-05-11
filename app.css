@@ -1,0 +1,36 @@
+header, footer{
+    background-color: #004a4a;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+aside{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+h2, h1{
+    color: darkblue;
+}
+
+.title{
+    color: blue;
+}
+
+#orderlist{
+    color: darkgreen;
+}
+nav {
+    background-color: #222;
+}
+
+section, article {
+    padding: 10px;
+    background-color: #eee;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
