@@ -9,102 +9,106 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-         <link href="app.css" rel="stylesheet"/> 
-         <script src="app.js" type="application/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+         <link href="Content/app.css" rel="stylesheet"/> 
+         <script src="Scripts/app.js" type="application/javascript"></script>
+         <script src="Scripts/MainController.js" type="application/javascript"></script>
     </head>
 
-    <body onload="onLoad()">
-        <header class="container-fluid">
-            <h1 class="title"> Anytown, USA!</h1>
-        </header>
+    <body onload="onLoad()" ng-app="angularApp">
+        <div ng-controller="MainController">
+            <header class="container-fluid">
+                <h1 class="title"> Anytown, USA!</h1>
+            </header>
 
-        <nav class="container-fluid">
-            <ul class="nav navbar-inverse navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="http://www.bing.com/search?q=amazing%20places">Amazing Places</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="container-fluid">
-            <div class="row">
-                
+            <nav class="container-fluid">
+                <ul class="nav navbar-inverse navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="http://www.bing.com/search?q=amazing%20places">Amazing Places</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    
 
-                <section class="col-sm-6 col-sm-push-3">
-                    <input id="smallnumber" tpye="number">
-                    <p id="numberMessage"></p>
-                    <button onclick="checkNumber()">Submit</button>
-                    <div class="row">
-                        <article>
-                            <h2> Amaxing Museums</h2>
-                            <div class="col-sm-3">
-                                <img src="http://lorempixel.com/output/city-q-c-200-100-1.jpg" />
-                            </div>
-                            <div class="col-sm-9">
-                                <p>While most Museums arecollection of old artificats and stuff that no one is really interested in seeing, our Museums are the best of the best.</p>
-                                <p>won't find anything like these any where else in the world. Our Museums rival that of our closest competitors including the Museums of Bad Art, the Paris Sewers Museum and the Museum of Broken Relationships.</p>
-                                <p>Come check them out...the fun is waiting for you.</p>
-                            </div>
-                        </article>
-                        <article>
-                            <h2> Waterpark</h2> 
-                            <div class="col-sm-3">
-                                <img src="http://lorempixel.com/output/sports-q-c-200-100-2.jpg" />
-                            </div>
-                            <div class="col-sm-9">
-                                <p>Our Waterpark is the biggest and the best park in the world. Just south of interstate of 2015, you'll find a sweet mix of Super Slides and lazy rivers.</p>
-                                <p>If that wasn't enough, we have 376 of the best food trucks in the state serving everything from gummy bears to lemonade and Pizza. Dont't forget if you buy our collectors edition souvenir water park keepstake, you get free refills all year.</p>
-                                <p>And we wouldn't be SplashAnyone without the rules about splashing... wait there are no rules.</p> 
-                            </div>
-                        </article>
-                        <article>
-                            <h2> Best Zoo in touwn</h2> 
-                            <div class="col-sm-3">
-                                <img src="http://lorempixel.com/output/cats-q-c-200-100-10.jpg" />
-                            </div>
-                            <div class="col-sm-9">
-                                <p>fianlly, you won't want to miss out cuddly little zoo animals. Lions, tigers, and bears...Oh My! We have the largest selection of born in captivity animals. We didn't wnat to take the form thier natural habitat, so we just got them from the other zoo in the state.</p>
-                            </div> 
-                        </article>
-                    </div>
-                </section>
+                    <section class="col-sm-6 col-sm-push-3">
+                        <input id="smallnumber" tpye="number">
+                        <p id="numberMessage"></p>
+                        <button onclick="checkNumber()">Submit</button>
+                        <div class="row">
+                            <article>
+                                <h2> Amaxing Museums</h2>
+                                <div class="col-sm-3">
+                                    <img src="http://lorempixel.com/output/city-q-c-200-100-1.jpg" />
+                                </div>
+                                <div class="col-sm-9">
+                                    <p>While most Museums arecollection of old artificats and stuff that no one is really interested in seeing, our Museums are the best of the best.</p>
+                                    <p>won't find anything like these any where else in the world. Our Museums rival that of our closest competitors including the Museums of Bad Art, the Paris Sewers Museum and the Museum of Broken Relationships.</p>
+                                    <p>Come check them out...the fun is waiting for you.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <h2> Waterpark</h2> 
+                                <div class="col-sm-3">
+                                    <img src="http://lorempixel.com/output/sports-q-c-200-100-2.jpg" />
+                                </div>
+                                <div class="col-sm-9">
+                                    <p>Our Waterpark is the biggest and the best park in the world. Just south of interstate of 2015, you'll find a sweet mix of Super Slides and lazy rivers.</p>
+                                    <p>If that wasn't enough, we have 376 of the best food trucks in the state serving everything from gummy bears to lemonade and Pizza. Dont't forget if you buy our collectors edition souvenir water park keepstake, you get free refills all year.</p>
+                                    <p>And we wouldn't be SplashAnyone without the rules about splashing... wait there are no rules.</p> 
+                                </div>
+                            </article>
+                            <article>
+                                <h2> Best Zoo in touwn</h2> 
+                                <div class="col-sm-3">
+                                    <img src="http://lorempixel.com/output/cats-q-c-200-100-10.jpg" />
+                                </div>
+                                <div class="col-sm-9">
+                                    <p>fianlly, you won't want to miss out cuddly little zoo animals. Lions, tigers, and bears...Oh My! We have the largest selection of born in captivity animals. We didn't wnat to take the form thier natural habitat, so we just got them from the other zoo in the state.</p>
+                                </div> 
+                            </article>
+                        </div>
+                    </section>
 
-                <aside class="col-sm-3 col-sm-pull-6">
-                    <h3>Things to DO</h3>
-                    <ol id="orderlist">
-                        <li><a href="https://americanhiking.org/">Hiking</a></li>
-                        <li><a href="http://www.bikemag.com/">Biking</a></li> 
-                        <li><a href="http://sarahsponyrides.com/trail-rides.html">Horseback</a></li> 
-                        <li><a href="http://www.ebags.com/department/backpacks">Backpacking</a></li> 
-                    </ol>
-                </aside>
+                    <aside class="col-sm-3 col-sm-pull-6">
+                        <h3>Things to DO</h3>
+                        <ol id="orderlist">
+                            <li><a href="https://americanhiking.org/">Hiking</a></li>
+                            <li><a href="http://www.bikemag.com/">Biking</a></li> 
+                            <li><a href="http://sarahsponyrides.com/trail-rides.html">Horseback</a></li> 
+                            <li><a href="http://www.ebags.com/department/backpacks">Backpacking</a></li> 
+                        </ol>
+                    </aside>
 
-                <aside class="col-sm-3">
-                    <h3>How to get Here</h3>
-                    <ul>
-                        <li>By Plane</li>
-                        <li>By Train</li>
-                        <li>By Automobile</li>
-                        <li>By Boat</li>
-                    </ul>
-                </aside>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 col-sm-push-3"></div>
-                <div class="col-sm-6 col-sm-pull-3">
-                    <a name="contact">Contact Us</a>
-                    <p>Anytown Chamber of Commerce </p>
-                    <p>123 Main St.</p>
-                    <p>Anytown, OH, 42000</p>
+                    <aside class="col-sm-3">
+                        <h3>How to get Here</h3>
+                        <ul>
+                            <li>By Plane</li>
+                            <li>By Train</li>
+                            <li>By Automobile</li>
+                            <li>By Boat</li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
-        </div>
 
-        <footer class="container-fluid">
-            Copyright 2017
-            <p id="timestamp"></p>
-        </footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-3"></div>
+                    <div class="col-sm-6 col-sm-pull-3">
+                        <a name="contact">Contact Us</a>
+                        <p>Anytown Chamber of Commerce </p>
+                        <p>123 Main St.</p>
+                        <p>Anytown, OH, 42000</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="container-fluid">
+                Copyright 2017
+                <p>{{ timestamp }}</p>
+            </footer>
+        </div>
     </body>
 </html>

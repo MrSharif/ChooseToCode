@@ -1,6 +1,7 @@
+var app = angular.module("angularApp", []);
+
 function onLoad(){
-    //alert("Funtion onLoad Called");
-    document.getElementById("timestamp").innerHTML= Date();
+    getAPIBadge();
 }
 
 function checkNumber(){
